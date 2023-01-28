@@ -1,0 +1,476 @@
+body{
+    margin: 0;
+    padding: 0; 
+}
+li{
+    list-style: none;
+}
+div,a,span,h1,h2,h3,h4,h5,h6,img,li,ol,ul,p{
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+figure{
+    display: block;
+    margin: 20px 0;
+}
+
+#wrapper{
+    margin: 0;
+    padding: 0;
+    height: 8760px;
+}
+
+.ball{
+    position: sticky;
+    top: 350px;
+    left: 10px;
+    z-index: 1;
+    width: 150px;
+}
+
+.ball img{
+    width: 150px;
+    height: 150px;
+}
+
+#header{
+    background-image: url(https://img.redro.pl/tapety/qatar-2022-stylish-background-texture-400-312749870.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 67px;
+    position: fixed;
+    z-index: 20;
+}
+
+#header .container{
+    margin: 0 100px;
+    padding: 0;
+    max-width: 1000px;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    justify-items: center;
+}
+
+#header .container a.wc22 img{
+    width: 200px;
+    height: 100%;    
+}
+
+#header .container ul.main-menu{
+    margin: 0 auto;
+    padding: 0;
+    display: flex;
+    list-style: none;
+}
+
+#header .container ul.main-menu li a{
+    display: block;
+    padding: 22.3px 18px;
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+#header .container ul.main-menu li.logo{
+    display: inline-block;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    font: var(--fa-font-solid);
+    content: "\f015";
+}
+
+#header .container ul.main-menu li{
+    position: relative;
+}
+
+#header .container ul.main-menu li ul.sub-menu{
+    position: absolute;
+    list-style: none;
+    width: 215px;
+    background-color: rgb(186, 40, 40);
+    display: none;
+    padding: 0;
+    z-index: 1;
+}
+
+#header .container ul.main-menu li ul.sub-menu li{
+    height: 51px;
+}
+
+#header .container ul.main-menu li ul.sub-menu li a{
+    display: block;
+    padding: 14.3px 18px;
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+ border-bottom: 1px solid rgb(185, 180, 180); 
+}
+
+#header .container ul.main-menu li ul.sub-menu li:hover>a{
+    border-bottom: 1px solid white;
+    background: #4780c3;
+}
+
+#header .container ul.main-menu li:hover>ul.sub-menu{
+    display: block;
+}
+
+#header .container ul.main-menu li a{
+    position: relative;
+}
+
+#header .container ul.main-menu>li>a::before{
+    content: "";
+    height: 4px;
+    width: 0;
+    position: absolute;
+    background-color: springgreen;
+    bottom: 0;
+    left: 0;
+    transition: 0.25s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+#header .container ul.main-menu>li:hover>a::before{
+    width: 100%;
+}
+
+#header .container ul.main-menu>li.has-child::after{
+    display: inline-block;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    font: var(--fa-font-solid);
+    content: "\f107";
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 25px 0;
+    color: azure;
+}
+
+#header .container ul.main-menu li ul.sub-menu li ul.sub-menu{
+    position: absolute;
+    left: 215px;
+    top: 0.1px;
+}
+
+#wp-content{
+    /* background-image: url(https://png.pngtree.com/thumb_back/fw800/background/20201105/pngtree-glittering-dust-particles-light-effect-background-image_449341.jpg); */
+    background-image: url(https://img3.thuthuatphanmem.vn/uploads/2019/10/10/background-3d-dong_032845717.gif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+#wp-content .main-swing{
+    background-color: white;
+    margin-top: 15%;
+    width: 1100px;
+    left: 13%;
+    position: absolute;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    height: 95.4%;
+}
+
+#wp-content .main-swing .main-content{
+    width: 65%;
+    margin-left: 10px;
+}
+
+#wp-content .main-swing .main-content .title-small{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 15px;
+}
+
+#wp-content .main-swing .main-content .title-small .small-1 p{
+    align-items: center;
+}
+
+#wp-content .main-swing .main-content .title-small .small-1 p a{
+    text-decoration: none;
+}
+
+#wp-content .main-swing .main-content .title-small .small-1 p a:first-child{
+    color: #2d67ad;
+    text-transform: uppercase;
+    font-size: 20px;
+    line-height: 16px;
+}
+
+#wp-content .main-swing .main-content .title-small .small-1 p a:not(:first-child){
+    color: #868686;
+    display: inline-block;
+    font-size: 16px;
+    line-height: 14px;
+    margin-left: 5px;
+}
+
+#wp-content .main-swing .main-content .title-small .small-1 p a:not(:first-child)::before{
+    display: inline-block;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    font: var(--fa-font-solid);
+    content: "\f105";
+    margin-left: 5px;
+    margin-right: 5px;
+}
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@500&display=swap');
+
+#wp-content .main-swing .main-content .title-big h1{
+    margin: 20px 0;
+    line-height: 35px;
+    /* font-family: notosans-bold; */
+    font-family: 'Noto Sans', sans-serif;
+}
+
+#wp-content .main-swing .main-content .title-big p{
+    margin-top: 20px;
+    font-size: 18px;
+}
+
+#wp-content .main-swing .main-content .title-big .inform-author{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #d2caca;
+}
+
+#wp-content .main-swing .main-content .title-big .inform-author .NhaBao{
+    display: flex;
+}
+
+#wp-content .main-swing .main-content .title-big .inform-author .NhaBao .NB1 a img{
+    display: inline-block;
+    margin-right: 15px;
+}
+
+#wp-content .main-swing .main-content .title-big .inform-author .NhaBao .NB2{
+    margin: 0;
+}
+
+#wp-content .main-swing .main-content .title-big .inform-author .NhaBao .NB2 span{
+    display: block;
+}
+
+#wp-content .main-swing .main-content .title-big .inform-author .NhaBao .NB2 span:first-child{
+    font-weight: 700;
+    font-size: 20px;
+    margin-bottom: 12px;
+}
+
+#wp-content .main-swing .main-content .title-big .inform-author .NhaBao .NB2 span:first-child a{
+    text-decoration: none;
+    color: #447ec5;
+}
+
+#wp-content .main-swing .main-content .title-big .inform-author .NhaBao .NB2 span:last-child{
+    color: #2a2a2a;
+    line-height: 16px;
+    
+}
+
+#wp-content .main-swing .main-content .title-big .inform-author .linkNhaBao{
+    box-sizing: border-box;
+    padding-top: 30px;
+}
+
+#wp-content .main-swing .main-content .title-big .inform-author .linkNhaBao a{
+    color: #447ec5;
+    font-family: arial;
+    font-size: 12px;
+}
+
+#wp-content .main-swing .main-content .offical .offical-tieude{
+    font-size: 24px;
+    font-weight: bold; /*tăng độ đậm cho chữ , có thể nhận các giá trị từ 100 đến 900*/
+    line-height: 30px;
+    margin-bottom: 15px;
+}
+
+#wp-content .main-swing .main-content .offical .offical-video-image figcaption{
+    text-align: center;
+    font-family: arial;
+    font-size: 14px;
+    font-style: italic;
+}
+
+#wp-content .main-swing .main-content .offical .offical-video-image .extra-inform{
+    padding: 15px;
+    border: 1px solid #c4c4c4;
+    margin: 20px 0;
+    background-color: #f3f3f3;
+}
+
+#wp-content .main-swing .main-content .offical .offical-video-image .extra-inform .extra-1{
+    display: flex; 
+    justify-content: space-between;
+}
+
+#wp-content .main-swing .main-content .offical .offical-video-image .extra-inform .extra-1 a{
+    display: block;
+    margin-right: 20px;
+}
+
+#wp-content .main-swing .main-content .offical .offical-video-image .extra-inform .extra-1 h4 a{
+    display: block;
+    text-decoration: none;
+    margin-bottom: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #2a2a2a;
+}
+
+#wp-content .main-swing .main-content .offical .offical-video-image .extra-inform .extra-1 h4 a:hover{
+    color: #447ec5;
+}
+#wp-content .main-swing .main-content .offical .offical-video-image .extra-inform .extra-1:first-child{
+    padding-bottom: 10px;
+    border-bottom: 1px solid #868686;
+    margin-bottom: 20px
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@500&family=Roboto:wght@100&display=swap');
+#wp-content .main-swing .main-content .offical .offical-video-image p{
+    margin-top: 20px;
+    font-size: 20px;
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: 100;
+    line-height: 30px;
+}
+
+#wp-content .main-swing .not-main{
+    width: 350px;
+}
+
+#wp-content .main-swing .not-main>img{
+    margin-top: 15px;
+    margin-right: 15px;
+    margin-left: 15px;
+    margin-bottom: 20px;
+    width: 300px;
+    height: 400px;
+}
+
+#wp-content .main-swing .not-main .another-news{
+    position: -webkit-sticky;
+    position: sticky;
+    top: 70px;
+}
+
+#wp-content .main-swing .not-main .another-news h3{
+    padding-bottom: 5px;
+    border-bottom: 1px solid #679ad8;;
+    margin-bottom: 20px;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
+#wp-content .main-swing .not-main .another-news h3>a{
+    color: #2d67ad;
+    font-family: 'Noto Sans', sans-serif;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+#wp-content .main-swing .not-main .another-news .ano-1{
+    display: flex;
+    margin-bottom: 20px;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@100&family=Roboto:wght@100&display=swap');
+#wp-content .main-swing .not-main .another-news .ano-1 div h4 a{
+    text-decoration: none;
+    color: #4b4a4a;
+    /* font-family: notosans-regular; */
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    line-height: 19px;
+    font-weight: normal;
+}
+
+#wp-content .main-swing .not-main .another-news .ano-1 div h4 a:hover{
+    color: #2d67ad;
+}
+
+#wp-content .main-swing .not-main .another-news .ano-1 .ano-11{
+    margin-right: 15px;
+}
+
+#wp-content .main-swing .not-main .another-news .ano-1 .ano-11 a{
+    display: block;
+    width: 140px;
+    height: 95px;
+}
+
+#wp-content .main-swing .not-main .another-news .ano-1 .ano-11 a img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#footer .conclusion{
+    margin: 25px 13%;
+    display: flex;
+    justify-content: space-between;
+}
+
+#footer .conclusion .infor-contact{
+    display: flex;
+}
+
+#footer .conclusion li{
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+
+#footer .conclusion .infor-contact .contact-1 .tact-2{
+    color: #4780c3;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+#footer .conclusion .infor-contact .contact-1 .tact-1{
+    color: #3c3a3a;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+#footer .conclusion .infor-contact .contact-1 ul:last-child{
+    margin-top: 20px;
+}
+
+#footer .conclusion .infor-contact .contact-2 .c2-1 li{
+    text-align: right;
+}
+
+#footer .conclusion .infor-contact .contact-2 .c2-2{
+    display: flex;
+}
+
+#footer .conclusion .infor-contact .contact-2 .c2-2 li{
+    margin-left: 15px;
+}
+
+#footer .conclusion .infor-contact .contact-2 .c2-2 li a img{
+    width: 27px;
+    height: 27px;
+}
+
+#footer .conclusion .infor-place .place-1{
+    color: #3c3a3a;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+#footer .conclusion .infor-place .place-2{
+    color: #4780c3;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+#footer .conclusion .infor-place ul:last-child{
+    margin-top: 20px;
+}

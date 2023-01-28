@@ -1,0 +1,431 @@
+body{
+    margin: 0;
+    padding: 0; 
+}
+li{
+    list-style: none;
+}
+div,a,span,h1,h2,h3,h4,h5,h6,img,li,ol,ul,p,figure{
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+#header{
+    background-image: url(https://img.redro.pl/tapety/qatar-2022-stylish-background-texture-400-312749870.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 67px;
+    position: fixed;
+    z-index: 20;
+}
+
+#header .container{
+    margin: 0 100px;
+    padding: 0;
+    max-width: 1000px;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    justify-items: center;
+}
+
+#header .container a.wc22 img{
+    width: 200px;
+    height: 100%;    
+}
+
+#header .container ul.main-menu{
+    margin: 0 auto;
+    padding: 0;
+    display: flex;
+    list-style: none;
+}
+
+#header .container ul.main-menu li a{
+    display: block;
+    padding: 22.3px 18px;
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+#header .container ul.main-menu li.logo{
+    display: inline-block;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    font: var(--fa-font-solid);
+    content: "\f015";
+}
+
+#header .container ul.main-menu li{
+    position: relative;
+}
+
+#header .container ul.main-menu li ul.sub-menu{
+    position: absolute;
+    list-style: none;
+    width: 215px;
+    background-color: rgb(186, 40, 40);
+    display: none;
+    padding: 0;
+    z-index: 1;
+}
+
+#header .container ul.main-menu li ul.sub-menu li{
+    height: 51px;
+}
+
+#header .container ul.main-menu li ul.sub-menu li a{
+    display: block;
+    padding: 14.3px 18px;
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+ border-bottom: 1px solid rgb(185, 180, 180); 
+}
+
+#header .container ul.main-menu li ul.sub-menu li:hover>a{
+    border-bottom: 1px solid white;
+    background: #4780c3;
+}
+
+#header .container ul.main-menu li:hover>ul.sub-menu{
+    display: block;
+}
+
+#header .container ul.main-menu li a{
+    position: relative;
+}
+
+#header .container ul.main-menu>li>a::before{
+    content: "";
+    height: 4px;
+    width: 0;
+    position: absolute;
+    background-color: springgreen;
+    bottom: 0;
+    left: 0;
+    transition: 0.25s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+#header .container ul.main-menu>li:hover>a::before{
+    width: 100%;
+}
+
+#header .container ul.main-menu>li.has-child::after{
+    display: inline-block;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    font: var(--fa-font-solid);
+    content: "\f107";
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 25px 0;
+    color: azure;
+}
+
+#header .container ul.main-menu li ul.sub-menu li ul.sub-menu{
+    position: absolute;
+    left: 215px;
+    top: 0.1px;
+}
+
+/* ======================================================================================== */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@500&display=swap');
+
+#con-body{
+    display: flex;
+    width: 100%;
+}
+
+#con-body .img-phu{
+    width: 15%;
+    border: 2px solid rgb(255, 119, 0);
+    margin-top: 70px;
+}
+
+#con-body .main-swing{
+    width: 70%;
+    margin-top: 70px;
+    padding: 0 15px;
+}
+
+#con-body .main-swing .swing-1 .swing-11 h4{
+    text-transform: uppercase;
+    text-align: center;
+}
+
+#con-body .main-swing .swing-1 ul{
+    display: flex;
+    /* margin: 0 15px; */
+}
+
+#con-body .main-swing .swing-1 ul li{
+    width: 16.66%;
+}
+
+#con-body .main-swing .swing-1 ul li a{
+    display: block;
+    border: 1px solid rgb(192, 202, 210);
+    margin: 0 3px;
+}
+
+#con-body .main-swing .swing-1 ul li a img{
+    width: 150px;
+    height: 205px;
+}
+
+#con-body .main-swing .swing-1 ul li a:hover{
+    transition: 0.25s ease-in-out;
+    border: 2px solid #4780c3;
+}
+
+#con-body .main-swing .swing-1 .swing-12{
+    margin: 30px 0;
+}
+
+#con-body .main-swing .swing-1 .swing-12 img{
+    width: 100%;
+    height: 300px;
+}
+
+#con-body .main-swing .swing-1 .swing-13{
+    padding: 0 30px;
+}
+
+#con-body .main-swing .swing-1 .swing-13 .title-1 p{
+    font-family: 'Noto Sans', sans-serif;
+    color: red;
+    font-weight: bold;
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+#con-body .main-swing .swing-1 .swing-13 .title-2 h1{
+    font-family: 'Noto Sans', sans-serif;
+    margin-bottom: 15px;
+}
+
+#con-body .main-swing .swing-1 .swing-13 .title-3 p{
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 16px;
+    color: #878383;
+    margin-bottom: 15px;
+}
+
+#con-body .main-swing .swing-2{
+    display: flex;
+}
+
+#con-body .main-swing .swing-2 .swing-21{
+    width: 65%;
+    padding-right: 10px;
+}
+
+#con-body .main-swing .swing-2 .swing-21 figure img{
+    width: 100%;
+    height: 350px;
+}
+
+#con-body .main-swing .swing-2 .swing-21 .shinbun{
+    display: flex;
+}
+
+#con-body .main-swing .swing-2 .swing-21 .shinbun .icons{
+    width: 15%;
+    margin-top: 50px;
+}
+
+#con-body .main-swing .swing-2 .swing-21 .shinbun .icons ul li a{
+    display: block;
+    margin-bottom: 15px;
+    width: 40px;
+    height: 40px;
+    font-size: 25px;
+    text-align: center;
+    line-height: 43px;
+    color: #4780c3;
+}
+
+#con-body .main-swing .swing-2 .swing-21 .shinbun .icons ul li a i{
+    width: 100%;
+    height: 100%;
+    line-height: 43px;
+    /* background: #0465c8; */
+}
+
+#con-body .main-swing .swing-2 .swing-21 .shinbun .main-content{
+    width: 85%;
+}
+
+#con-body .main-swing .swing-2 .swing-21 .shinbun .main-content .introduce .Author{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 9px;
+    border-bottom: 1px solid #c6bbbb;
+}
+
+#con-body .main-swing .swing-2 .swing-21 .shinbun .main-content .introduce .Author .name{
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 14px;
+}
+
+#con-body .main-swing .swing-2 .swing-21 .shinbun .main-content .introduce .Author .day{
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 12px;
+}
+
+#con-body .main-swing .swing-2 .swing-21 .shinbun .main-content .content-1 p{
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 18px;
+    margin-bottom: 15px;
+    line-height: 25px;
+}
+
+#con-body .main-swing .swing-2 .swing-21 .shinbun .main-content .content-1 p:first-child{
+    margin-top: 25px;
+}
+
+#con-body .main-swing .swing-2 .swing-21 .shinbun .main-content .content-2 p{
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 23px;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+#con-body .main-swing .swing-2 .swing-21 .shinbun .main-content .content-3{
+    padding: 10px;
+    border: 1px solid #bbb3b3;
+}
+
+#con-body .main-swing .swing-2 .swing-21 .shinbun .main-content .content-3 p{
+    font-family: 'Noto Sans', sans-serif;
+    line-height: 25px;
+}
+
+#con-body .main-swing .swing-2 .swing-21 .shinbun .main-content .content-3 figure figcaption{
+    color: #878383;
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 13px;
+    line-height: 17px;
+}
+
+#con-body .main-swing .swing-2 .swing-21 .shinbun .main-content .content-4{
+    padding: 15px;
+    border: 1px solid #bbb3b3;
+    margin: 30px 0;
+}
+
+#con-body .main-swing .swing-2 .swing-21 .shinbun .main-content .content-4 p:first-child{
+    font-size: 18px;
+    font-family: 'Noto Sans', sans-serif;
+    text-transform: uppercase;
+
+}
+
+#con-body .main-swing .swing-2 .swing-21 .shinbun .main-content .content-4 p{
+    font-size: 16px;
+    font-family: 'Noto Sans', sans-serif;
+    text-transform: none;
+
+}
+
+#con-body .main-swing .swing-2 .swing-21 .shinbun .main-content .content-4 img{
+    width: 523px;
+    height: 350px;
+    margin-top: 10px;
+}
+
+#con-body .main-swing .swing-2 .swing-21 .shinbun .main-content .content-4 div{
+    display: flex;
+    margin-bottom: 15px;
+}
+
+#con-body .main-swing .swing-2 .swing-21 .shinbun .main-content .content-4 div img{
+    width: 38px;
+    height: 30px;
+    margin-right: 15px;
+}
+
+#con-body .main-swing .swing-2 .swing-21 .shinbun .main-content .content-4 div p{
+    padding-top: 13px;
+    font-size: 25px;
+    color: #474242;
+    font-weight: bold;
+}
+
+#con-body .main-swing .swing-2 .swing-22{
+    width: 35%;
+    padding-left: 10px;
+}
+
+#con-body .main-swing .swing-2 .swing-22 img{
+    width: 100%;
+}
+
+/* ======================================================================================== */
+
+#footer .conclusion{
+    margin: 25px 13%;
+    display: flex;
+    justify-content: space-between;
+}
+
+#footer .conclusion .infor-contact{
+    display: flex;
+}
+
+#footer .conclusion li{
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+
+#footer .conclusion .infor-contact .contact-1 .tact-2{
+    color: #4780c3;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+#footer .conclusion .infor-contact .contact-1 .tact-1{
+    color: #3c3a3a;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+#footer .conclusion .infor-contact .contact-1 ul:last-child{
+    margin-top: 20px;
+}
+
+#footer .conclusion .infor-contact .contact-2 .c2-1 li{
+    text-align: right;
+}
+
+#footer .conclusion .infor-contact .contact-2 .c2-2{
+    display: flex;
+}
+
+#footer .conclusion .infor-contact .contact-2 .c2-2 li{
+    margin-left: 15px;
+}
+
+#footer .conclusion .infor-contact .contact-2 .c2-2 li a img{
+    width: 27px;
+    height: 27px;
+}
+
+#footer .conclusion .infor-place .place-1{
+    color: #3c3a3a;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+#footer .conclusion .infor-place .place-2{
+    color: #4780c3;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+#footer .conclusion .infor-place ul:last-child{
+    margin-top: 20px;
+}
